@@ -1,0 +1,30 @@
+html, body, #container {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+body {
+  padding-top: 50px;
+}
+
+h3 {
+  padding: 0px;
+  font-size: 16px;
+  margin-left: 5px;
+  font-weight: bold;
+  font-family: "Montserrat";
+}
+
+h4 {
+  padding: 5px;
+  font-size: 13px;
+  line-height: 16px;
+  font-family: "Montserrat";
+}
+
+/*this is important to give the map a height*/
+#map {
+  width: auto;
+  height: 100%;
+}
