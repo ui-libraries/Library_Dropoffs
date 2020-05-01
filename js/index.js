@@ -55,8 +55,7 @@ function drawMap(err, books) {
       //bind a popup window to each circle marker
       layer.bindPopup("<h3>" + props.Name + "</h3>" +
         "<h4>" + props.Address +
-        "<br>" + props.City + ", " + props.State + " " + props.Zip +
-        "<br>Who can use: " + props.Availability + "</h4>"
+        "<br>" + props.City + ", " + props.State + " " + props.Zip + "</h4>"
       );
 
     } //end onEachFeature
