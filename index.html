@@ -1,44 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
-        <meta name="mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="theme-color" content="#000000">
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <title>Book Drop-Off Locations</title>
 
-        <!-- link to Montserrat font -->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#000000">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Off-Campus Book Drop-Off Locations</title>
 
-        <!-- link the css files -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.3/leaflet.css" >
-        <link rel="stylesheet" href="css/index.css">
-    </head>
+  <!-- link to Montserrat font -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <!-- link the css files -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.3/leaflet.css">
+  <!--for icon support-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/v4-shims.css">
+  <!-- for icon markers -->
+  <link rel="stylesheet" href="css/leaflet.extra-markers.min.css">
+  <!-- for info button -->
+  <link rel='stylesheet' href='https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css'>
+  <link rel="stylesheet" href="css/easy-button.css">
+  <!-- for filter buttons -->
+  <link rel="stylesheet" href="css/leaflet-tag-filter-button.css">
+  <!-- rest of css -->
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <div class="navbar-icon-container">
-                        <a href="#" class="navbar-icon pull-right visible-xs" id="nav-btn">
-                            <i class="fa fa-bars fa-lg white"></i>
-                        </a>
-                    </div>
-                    <a class="navbar-brand" href="#">Book Drop-Off Locations</a>
-                </div>
-            </div>
-        </div>
-        <div id="container">
-        <!-- the map will go inside this div below -->
-<div id="map"></div>
-        <!-- link to the js files -->
-<script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.3/leaflet.js"></script>
-<script src="https://d3js.org/d3.v4.min.js"></script>
-<script src="js/index.js"></script>
+  <header>
+    <h1>Off-Campus Book Drop-Off Locations</h1><br>
+    <h2>Digital Scholarship & Publishing Studio, University of Iowa Libraries, 2020</h2>
+  </header>
+
+
+    <!-- the map will go inside this div below -->
+    <div id="map"></div>
+
+    <!-- button-dependent info window -->
+    <div id="dialog" title="Off-Campus Book Returns">
+      <h4>If you are away from campus and have books from the University Libraries,
+        you may be wondering how to return them. This map shows the many Locations
+        throughout the Midwest where you can return your books.
+      </h4>
+    </div>
+    <!-- end button-dependent info window -->
+
+  <!-- link to the js files -->
+  <script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.3/leaflet.js"></script>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="js/leaflet.extra-markers.min.js"></script>
+  <!-- for button-dependent map information window -->
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="js/easy-button.js"></script>
+  <script src="js/index.js"></script>
 </body>
+
 </html>
