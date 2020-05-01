@@ -35,15 +35,15 @@ function drawMap(err, books) {
   var dropoffs = L.geoJson(books, { //define layer with a variable
 
     pointToLayer: function(feature, ll) {
-
+/*
       //define an empty array into which you can add tags for the filter buttons
       var tags = [];
 
       //push properties into the tags array for later referencing by the filter buttons
       tags.push(feature.properties.State);
-
+*/
       return L.marker(ll, {
-        tags: tags,
+        //tags: tags,
         icon: L.ExtraMarkers.icon({
           icon: 'fas fa-book',
           prefix: 'fa',
@@ -81,7 +81,6 @@ function drawMap(err, books) {
       L.control.layers(null, overlays, {
         collapsed: false,
       }).addTo(map);
-  */
 
   // States
   L.control.tagFilterButton({
@@ -89,6 +88,7 @@ function drawMap(err, books) {
     filterOnEveryClick: true,
     icon: '<i class="fas fa-filter"></i>',
   }).addTo(map);
+  */
 
   // create an info button to describe the map and supporting data
   var infoButton = L.easyButton({
