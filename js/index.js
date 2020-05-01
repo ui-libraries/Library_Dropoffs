@@ -36,7 +36,14 @@ function drawMap(err, books) {
 
     pointToLayer: function(feature, ll) {
 
+      //define an empty array into which you can add tags for the filter buttons
+      var tags = [];
+
+      //push properties into the tags array for later referencing by the filter buttons
+      tags.push(feature.properties.State);
+
       return L.marker(ll, {
+        tags: tags,
         icon: L.ExtraMarkers.icon({
           icon: 'fas fa-book',
           prefix: 'fa',
@@ -76,6 +83,13 @@ function drawMap(err, books) {
       }).addTo(map);
   */
 
+  // States
+  L.control.tagFilterButton({
+    data: ['IA', 'IL', 'IN', 'MI', 'MN', 'NE', 'WI'],
+    filterOnEveryClick: true,
+    icon: '<i class="fas fa-filter"></i>',
+  }).addTo(map);
+
   // create an info button to describe the map and supporting data
   var infoButton = L.easyButton({
     id: 'infoButton',
@@ -89,5 +103,22 @@ function drawMap(err, books) {
       }
     }]
   }).addTo(map);
+
+  jQuery('.easy-button-button').click(function() {
+    target = jQuery('.easy-button-button').not(this);
+    target.parent().find('.tag-filter-tags-container').css({
+      'display': 'none',
+    });
+  });
+
+  //disable dragging of the map after clicking a filter button
+  jQuery('.easy-button-button').click(function() {
+    map.dragging.disable();
+  });
+
+  //enable dragging of the map after clicking on the map
+  map.on('click', function() {
+    map.dragging.enable();
+  });
 
 }; //end drawMap function
