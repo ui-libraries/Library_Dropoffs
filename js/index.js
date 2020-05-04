@@ -40,7 +40,7 @@ function drawMap(err, books) {
       var tags = [];
 
       //push properties into the tags array for later referencing by the filter buttons
-      tags.push(feature.properties.State_Long);
+      tags.push(feature.properties.Availability);
 
       return L.marker(ll, {
         tags: tags,
@@ -98,7 +98,7 @@ function drawMap(err, books) {
 */
   // States
   L.control.tagFilterButton({
-    data: ['Iowa', 'Illinois', 'Indiana', 'Michigan', 'Minnesota', 'Nebraska', 'Wisconsin'],
+    data: ['Available to all students in Iowa'],
     filterOnEveryClick: true,
     icon: '<i class="fas fa-filter"></i>',
   }).addTo(map);

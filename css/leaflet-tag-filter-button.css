@@ -34,7 +34,7 @@
 .leaflet-bar .tag-filter-tags-container ul {
     border: 1px solid hsl(180, 40%, 60%);
     box-shadow: 0 1px 7px #999;
-    width: 125px; margin: 0 auto;
+    width: 220px; margin: 0 auto;
     overflow-y: auto;
     max-height: 200px;
     -webkit-border-bottom-right-radius: 5px;
