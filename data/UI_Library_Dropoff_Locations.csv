@@ -1,23 +1,34 @@
-﻿Name,Address,City,State,Zip,Availability,Latitude,Longitude
-University of Iowa Main Library,125 W. Washington Street,Iowa City,IA,52242,UI Patrons,41.6595311,-91.538444
-University of Iowa Hardin Library,600 Newton Road,Iowa City,IA,52246,UI Patrons,41.6624423,-91.5476257
-Coralville Public Library,1401 5th Street,Coralville,IA,52241,UI Patrons,41.677261,-91.582064
-North Liberty Public Library,520 W. Cherry Street,North Liberty,IA,52317,UI Patrons,41.7501675,-91.6052661
-University of Northern Iowa Rod Library,1227 W 27th Street,Cedar Falls,IA,50614,UI Patrons,42.515133,-92.459578
-Iowa State University Parks Library,701 Morrill Road,Ames,IA,50011,UI Patrons,42.028603,-93.648849
-Briar Cliff University Bishop Mueller Library,3303 Rebecca Street,Sioux City,IA,51104,UI Patrons,42.526454,-96.42748
-Grinnell College Library,1111 6th Ave,Grinnell,IA,50112,UI Patrons,41.74561833,-92.72072062
-"Hawkeye Community College Library Main Campus, North Entrance",1501 East Orange Road,Waterloo,IA,50704,UI Patrons,42.431053,-92.326666
-Indian Hills Community College,525 Grandview Avenue,Ottumwa,IA,52501,UI Patrons,41.044464,-92.394443
-Loras College Library,1450 Alta Vista,Dubuque,IA,52001,UI Patrons,42.503045,-90.681231
-Mercy College of Health Sciences Library Sullivan Center,928 6th Avenue,Des Moines,IA,50309,UI Patrons,41.59394062,-93.62573467
-Morningside College Library,1501 Morningside Avenue,Sioux City,IA,51106,UI Patrons,42.473961,-96.359087
-Simpson College Dunn Library,508 N C Street,Indianola,IA,50125,UI Patrons,41.365475,-93.563664
-Indiana University Wells Library,1320 E. Tenth Street,Bloomington,IN,47405,UI Patrons,39.170993,-86.5168
-Michigan State University Main Library,366 W. Circle Drive,East Lansing,MI,48864,UI Patrons,42.730847,-84.483369
-Purdue University Library,504 West State Street,West Lafayette,IN,47907,UI Patrons,40.424466,-86.912509
-University of Illinois Main Library,1408 W Gregory Drive,Urbana,IL,61801,UI Patrons,40.104321,-88.2282586
-University of Michigan Hatcher Graduate Library,913 S. University Avenue,Ann Arbor,MI,48109,UI Patrons,42.276362,-83.738302
-University of Minnesota Wilson Library,309 19th Avenue S,Minneapolis,MN,55455,UI Patrons,44.9709032,-93.2436144
-University of Nebraska Love Library,1314-1300 R Street,Lincoln,NE,68588,UI Patrons,40.81702771,-96.70235627
-University of Wisconsin Memorial Library,728 State Street,Madison,WI,53706,UI Patrons,43.075752,-89.39792
+﻿Name,Address,City,State,Zip,Availability,First_Contact,First_Contact_Email,Second_Contact,Second_Contact_Email,Latitude,Longitude,State_Long
+Briar Cliff University Bishop Mueller Library,3303 Rebecca Street,Sioux City,IA,51104,UI Patrons,Sister Mary Jane Koenigs ,MaryJane.Koenigs@briarcliff.edu,Bree Kirsch,Breanne.Kirsch@briarcliff.edu ,42.526454,-96.42748,Iowa
+Coralville Public Library,1401 5th Street,Coralville,IA,52241,UI Patrons,Alison Ames Galstad,agalstad@coralville.org,,,41.677261,-91.582064,Iowa
+Cornell College Cole Library,320 3rd Street SW,Mount Vernon,IA,52314,,Ellen Wrede,ewrede@cornellcollege.edu,Randi Thon,rthon@cornellcollege.edu,41.922231,-91.421602,Iowa
+Dordt University Hulst Library,700 7th Street NE,Sioux Center,IA,51250,,Jenni Breems,jenni.breems@dordt.edu,Robert Lancaster,Robert.lancaster@dordt.edu,43.08273,-96.166688,Iowa
+Drake University Cowles Library,2725 University Avenue,Des Moines,IA,50311,,Leslie Noble,leslie.noble@drake.edu,Mark Stumme,mark.stumme@drake.edu,41.601247,-93.654273,Iowa
+Grand View University Library,1350 Morton Avenue,Des Moines,IA,50316,,Pam Rees,prees@grandview.edu,,,41.620153,-93.600971,Iowa
+Grinnell College Library,1111 6th Ave,Grinnell,IA,50112,UI Patrons,Micki Behounek ,behounek@grinnell.edu,,,41.74561833,-92.72072062,Iowa
+"Hawkeye Community College Library Main Campus, North Entrance",1501 East Orange Road,Waterloo,IA,50704,UI Patrons,Risa Wheeler,risa.wheeler@hawkeyecollege.edu  ,Eric Bryden,eric.bryden@hawkeyecollege.edu  ,42.431053,-92.326666,Iowa
+Indian Hills Community College,525 Grandview Avenue,Ottumwa,IA,52501,UI Patrons,Cheryl Talbert,Cheryl.Talbert@indianhills.edu,,,41.044464,-92.394443,Iowa
+Indiana University Wells Library,1320 E. Tenth Street,Bloomington,IN,47405,UI Patrons,Sherri Michaels ,shmichae@indiana.edu,,,39.170993,-86.5168,Indiana
+Iowa State University Parks Library,701 Morrill Road,Ames,IA,50011,UI Patrons,Dawn Mick,mickd@iastate.edu,,,42.028603,-93.648849,Iowa
+Loras College Library,1450 Alta Vista,Dubuque,IA,52001,UI Patrons,Heidi Pettitt ,heidi.pettitt@loras.edu,,,42.503045,-90.681231,Iowa
+Mercy College of Health Sciences Library Sullivan Center,928 6th Avenue,Des Moines,IA,50309,UI Patrons,Jennie E. Ver Steeg,jversteeg@mercydesmoines.org,Lance Pfantz,lpfantz@mercydesmoines.org,41.59394062,-93.62573467,Iowa
+Michigan State University Main Library,366 W. Circle Drive,East Lansing,MI,48864,UI Patrons,Kim Pierce,piercek@msu.edu,,,42.730847,-84.483369,Michigan
+Morningside College Library,1501 Morningside Avenue,Sioux City,IA,51106,UI Patrons,Adam Fullerton,fullertona@morningside.edu,,,42.473961,-96.359087,Iowa
+North Liberty Public Library,520 W. Cherry Street,North Liberty,IA,52317,UI Patrons,Jennie Garner,jgarner@northlibertyiowa.org,,,41.7501675,-91.6052661,Iowa
+Northeast Iowa Community College Library,8342 NICC Drive,Peosta,IA,52068,,Erica Knapp ,knappe@nicc.edu,Victor Lieberman, liebermanv@nicc.edu,42.445008,-90.845522,Iowa
+Northwestern College DeWitt Library,101 7th Street SW,Orange City,IA,51041,,Sara Huyser,sara.huyser@nwciowa.edu,Greta Grond,ggrond@nwciowa.edu,42.998896,-96.058797,Iowa
+Purdue University Library,504 West State Street,West Lafayette,IN,47907,UI Patrons,Alison Lampley,lampley@purdue.edu,,,40.424466,-86.912509,Indiana
+Saint Ambrose University Library,518 W. Locust Street,Davenport,IA,52803,,Brandi Russell,russellbrandij@sau.edu,Julia Salting,saltingjuliab@sau.edu,41.53931,-90.578911,Iowa
+Simpson College Dunn Library,508 N C Street,Indianola,IA,50125,UI Patrons,Jenn Mavin,Jennifer.mavin@simpson.edu ,Cyd Dyer,cyd.dyer@simpson.edu,41.365475,-93.563664,Iowa
+Southeastern Community College Fred Karre Memorial Library,335 Messenger Rd,Keokuk,IA,52632,,Shirley Martin ,smartin2@scciowa.edu,Julie Meyer,jmeyer@scciowa.edu,40.42004,-91.400685,Iowa
+University of Dubuque Charles C. Myers Library,2195 Grace Street,Dubuque,IA,52001,,Christopher Doll,CDoll@dbq.edu,,,42.497192,-90.693437,Iowa
+University of Illinois Main Library,1408 W Gregory Drive,Urbana,IL,61801,UI Patrons,Cherie Weible,cweible@illinois.edu,,,40.104321,-88.2282586,Illinois
+University of Iowa Hardin Library,600 Newton Road,Iowa City,IA,52246,UI Patrons,Janna Lawrence,janna-lawrence@uiowa.edu,,,41.6624423,-91.5476257,Iowa
+University of Iowa Main Library,125 W. Washington Street,Iowa City,IA,52242,UI Patrons,Amy Paulus,amy-fuls@uiowa.edu,,,41.6595311,-91.538444,Iowa
+University of Michigan Hatcher Graduate Library,913 S. University Avenue,Ann Arbor,MI,48109,UI Patrons,Emily Campbell,ekflanag@umich.edu,,,42.276362,-83.738302,Michigan
+University of Minnesota Wilson Library,309 19th Avenue S,Minneapolis,MN,55455,UI Patrons,Melissa Eighmy Brown,eighm002@umn.edu,,,44.9709032,-93.2436144,Minnesota
+University of Nebraska Love Library,1314-1300 R Street,Lincoln,NE,68588,UI Patrons,Micahel Straatmann,mstraatmann1@unl.edu,,,40.81702771,-96.70235627,Nebraska
+University of Northern Iowa Rod Library,1227 W 27th Street,Cedar Falls,IA,50614,UI Patrons,Linda Mclaury,linda.mclaury@uni.edu,,,42.515133,-92.459578,Iowa
+University of Wisconsin Memorial Library,728 State Street,Madison,WI,53706,UI Patrons,Rachel Watters,rachel.watters@wisc.edu,,,43.075752,-89.39792,Wisconsin
+Wartburg College Vogel Library,100 Wartburg Blvd,Waverly,IA,50677,,Meredith Borchardt ,Meredith.borchardt@wartburg.edu,,,42.727626,-92.483331,Iowa
+William Penn University Wilcox Library,201 Trueblood Avenue,Oskaloosa,IA,52577,,Chris Kock ,kockc@wmpenn.edu,Jennifer Sterling ,sterlingj@wmpenn.edu,41.307517,-92.647235,Iowa

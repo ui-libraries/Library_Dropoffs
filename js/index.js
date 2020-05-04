@@ -35,15 +35,15 @@ function drawMap(err, books) {
   var dropoffs = L.geoJson(books, { //define layer with a variable
 
     pointToLayer: function(feature, ll) {
-/*
+
       //define an empty array into which you can add tags for the filter buttons
       var tags = [];
 
       //push properties into the tags array for later referencing by the filter buttons
-      tags.push(feature.properties.State);
-*/
+      tags.push(feature.properties.State_Long);
+
       return L.marker(ll, {
-        //tags: tags,
+        tags: tags,
         icon: L.ExtraMarkers.icon({
           icon: 'fas fa-book',
           prefix: 'fa',
@@ -58,11 +58,25 @@ function drawMap(err, books) {
     onEachFeature: function(feature, layer) {
 
       var props = layer.feature.properties;
+      var secondCon = props.Second_Contact;
+      var secondEm = props.Second_Contact_Email;
+
+      if (secondCon == null) {
+        secondCon = "";
+      } if (secondEm == null) {
+        secondEm = "";
+      }
 
       //bind a popup window to each circle marker
       layer.bindPopup("<h3>" + props.Name + "</h3>" +
-        "<h4>" + props.Address +
-        "<br>" + props.City + ", " + props.State + " " + props.Zip + "</h4>"
+        "<h4>Address:" +
+        "<br>" + props.Address +
+        "<br>" + props.City + ", " + props.State + " " + props.Zip +
+        "<br><br>Contacts:" +
+        "<br>" + props.First_Contact +
+        "<br>" + '<a href=mailto:"' + props.First_Contact_Email + '"target="_blank">' + props.First_Contact_Email + "</a>" +
+        "<br>" + secondCon +
+        "<br>" + '<a href=mailto:"' + secondEm + '"target="_blank">' + secondEm + "</a>" + "</h4>"
       );
 
     } //end onEachFeature
@@ -71,7 +85,7 @@ function drawMap(err, books) {
 
   //fit the map to the extent of the circle markers upon drawing
   map.fitBounds(dropoffs.getBounds());
-  /*
+/*
       //define layers
       var overlays = {
         "Drop-Off Locations": dropoffs,
@@ -81,14 +95,14 @@ function drawMap(err, books) {
       L.control.layers(null, overlays, {
         collapsed: false,
       }).addTo(map);
-
+*/
   // States
   L.control.tagFilterButton({
-    data: ['IA', 'IL', 'IN', 'MI', 'MN', 'NE', 'WI'],
+    data: ['Iowa', 'Illinois', 'Indiana', 'Michigan', 'Minnesota', 'Nebraska', 'Wisconsin'],
     filterOnEveryClick: true,
     icon: '<i class="fas fa-filter"></i>',
   }).addTo(map);
-  */
+
 
   // create an info button to describe the map and supporting data
   var infoButton = L.easyButton({
