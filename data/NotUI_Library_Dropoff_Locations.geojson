@@ -1,6 +1,6 @@
 {
 "type": "FeatureCollection",
-"name": "UI_Library_Dropoff_Locations",
+"name": "NotUI_Library_Dropoff_Locations",
 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
 "features": [
 { "type": "Feature", "properties": { "Name": "Briar Cliff University Bishop Mueller Library", "Address": "3303 Rebecca Street", "City": "Sioux City", "State": "IA", "Zip": 51104, "Availability": "Available to all students in Iowa", "First_Contact": "Sister Mary Jane Koenigs ", "First_Contact_Email": "MaryJane.Koenigs@briarcliff.edu", "Second_Contact": "Bree Kirsch", "Second_Contact_Email": "Breanne.Kirsch@briarcliff.edu ", "Latitude": 42.526454, "Longitude": -96.42748, "State_Long": "Iowa" }, "geometry": { "type": "Point", "coordinates": [ -96.42748, 42.52645 ] } },
