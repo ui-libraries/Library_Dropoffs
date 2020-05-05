@@ -82,21 +82,4 @@ function drawMap(err, books) {
     }]
   }).addTo(map);
 
-  jQuery('.easy-button-button').click(function() {
-    target = jQuery('.easy-button-button').not(this);
-    target.parent().find('.tag-filter-tags-container').css({
-      'display': 'none',
-    });
-  });
-
-  //disable dragging of the map after clicking a filter button
-  jQuery('.easy-button-button').click(function() {
-    map.dragging.disable();
-  });
-
-  //enable dragging of the map after clicking on the map
-  map.on('click', function() {
-    map.dragging.enable();
-  });
-
 }; //end drawMap function
