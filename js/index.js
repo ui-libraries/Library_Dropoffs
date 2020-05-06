@@ -60,11 +60,15 @@ function drawMap(err, books) {
       var props = layer.feature.properties;
       var secondCon = props.Second_Contact;
       var secondEm = props.Second_Contact_Email;
+      var dropInfo = props.Instructions;
+      var dropBox = "<br><br>Instructions:" + "<br>" + dropInfo;
 
       if (secondCon == null) {
         secondCon = "";
       } if (secondEm == null) {
         secondEm = "";
+      } if (dropInfo == null) {
+        var dropBox = "";
       }
 
       //bind a popup window to each circle marker
@@ -72,6 +76,7 @@ function drawMap(err, books) {
         "<h4>Address:" +
         "<br>" + props.Address +
         "<br>" + props.City + ", " + props.State + " " + props.Zip +
+        dropBox +
         "<br><br>Contacts:" +
         "<br>" + props.First_Contact +
         "<br>" + '<a href=mailto:"' + props.First_Contact_Email + '"target="_blank">' + props.First_Contact_Email + "</a>" +
